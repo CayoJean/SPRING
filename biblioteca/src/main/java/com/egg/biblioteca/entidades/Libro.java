@@ -14,8 +14,8 @@ public class Libro {
     private Long isbn;
 
     private String titulo;
-
     private Integer ejemplares;
+    private String descripcion; // nuevo atributo
 
     @Temporal(TemporalType.DATE)
     private Date alta;
@@ -27,7 +27,8 @@ public class Libro {
     private Editorial editorial;
 
     // Constructor vacío
-    public Libro() {}
+    public Libro() {
+    }
 
     // Getters y Setters
     public Long getIsbn() {
@@ -52,6 +53,14 @@ public class Libro {
 
     public void setEjemplares(Integer ejemplares) {
         this.ejemplares = ejemplares;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public Date getAlta() {
